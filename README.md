@@ -30,3 +30,14 @@ This WordPress theme, **MyTheme**, was developed by converting a free HTML templ
 
 You can access the custom REST API for Projects at:
 
+`{YOURDOMAIN}/wp-json/projects-api/v1/projects`
+
+Replace `{YOURDOMAIN}` with the URL of your WordPress installation.
+
+---
+
+### Additional Information
+
+This theme was converted by **ubaidrahim** from an HTML template for WordPress use. For any reference, the original HTML template is included within the theme package.
+
+
