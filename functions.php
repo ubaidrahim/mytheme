@@ -46,6 +46,11 @@ function official_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
+    require_once get_template_directory() . '/wp_nav_walker.php';
+
+
+    // add_filter( 'wp_get_nav_menu_object', 'override_wp_get_nav_menu_object', 10, 2 );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(

@@ -63,12 +63,21 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <?php
+					// wp_nav_menu( array(
+					// 	'theme_location' => 'primary-menu',
+					// 	'container'      => 'ul',
+					// 	'menu_class'     => 'nav navbar-nav ml-auto', // Apply Bootstrap classes
+                    //    'depth' => 2, 
+                    //    'walker' => new WP_Bootstrap_Navwalker(),
+					// ) );
 					wp_nav_menu( array(
-						'theme_location' => 'primary-menu',
-						'container'      => 'ul',
-						'menu_class'     => 'nav navbar-nav ml-auto', // Apply Bootstrap classes
-					) );
-					?>
+                        'theme_location' => 'menu-1', // This should match the key used in register_nav_menus
+                        'container'      => 'ul',
+                        'menu_class'     => 'nav navbar-nav ml-auto', // Apply Bootstrap classes
+                        'depth'          => 2,
+                        'walker'         => new WP_Bootstrap_Navwalker(),
+                    ) );
+                    ?>
                 </div>
             <!-- End Side Menu -->
         </nav>
